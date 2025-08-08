@@ -1,6 +1,13 @@
 import React from 'react';
 import './about-us.css';
-import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
+
+// ✅ Material UI icons
+import PhoneIcon from '@mui/icons-material/Phone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const AboutUs: React.FC = () => {
   return (
@@ -12,15 +19,22 @@ const AboutUs: React.FC = () => {
         </p>
 
         <div className="contact-info">
-          <div><FaMapMarkerAlt className="icon" /> V Karate Academy , SRC Nagar , Tiruppur , Tamil Nadu 641607 , India</div>
-          <div><FaPhone className="icon" /> +91 96295 20463</div>
-          <div><FaEnvelope className="icon" /> vkarate@gmail.com</div>
+          <div className="contact-item">
+            <LocationOnIcon className="icon" />
+            V Karate Academy, SRC Nagar, Tiruppur, Tamil Nadu 641607, India
+          </div>
+          <div className="contact-item">
+            <PhoneIcon className="icon" /> +91 96295 20463
+          </div>
+          <div className="contact-item">
+            <EmailIcon className="icon" /> vkarate@gmail.com
+          </div>
         </div>
 
         <div className="social-links">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+          <a href="https://www.instagram.com/viswa_viswanath__?igsh=NHZ3d2tzYTUxZ3Mw" target="_blank" rel="noopener noreferrer"><InstagramIcon className="icon" /></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FacebookIcon className="icon" /></a>
+          <a href="https://www.youtube.com/@v-karateacademy4498" target="_blank" rel="noopener noreferrer"><YouTubeIcon className="icon" /></a>
         </div>
       </div>
     </section>

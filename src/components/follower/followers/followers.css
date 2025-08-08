@@ -1,52 +1,51 @@
+/* followers.css */
+
 .followers-container {
+  
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 2rem;
-  margin: 2rem auto;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: #141414;
+  flex-wrap: wrap;
 }
 
 .follower-banner {
-  flex: 1 1 200px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
+  gap: 1rem;
+  padding: 1.2rem 2rem;
   border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease-in-out;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  min-width: 220px;
 }
 
 .follower-banner:hover {
   transform: translateY(-5px);
 }
 
-.icon {
-  font-size: 1.8rem;
-  margin-right: 0.8rem;
+.icon-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
 }
 
 .platform {
-  flex: 1;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
-
+.platform:hover {
+  color: #4f46e5;
+}
 .count {
-  font-size: 1.3rem;
-}
-
-/* Platform-specific colors */
-.youtube {
-  background-color: #FF0000;
-}
-
-.instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}
-
-.facebook {
-  background-color: #4267B2;
+  color: white;
+  font-size: 1rem;
 }

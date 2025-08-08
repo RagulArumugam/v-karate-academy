@@ -1,26 +1,32 @@
 import React from 'react';
 import './followers.css';
-import * as FaIcons from 'react-icons/fa';
+
+import youtubeLogo from '../../../assets/Youtube.png';
+import instagramLogo from '../../../assets/insta.webp';
+import facebookLogo from '../../../assets/Facebook.png';
 
 const FollowerBanners: React.FC = () => {
   return (
     <div className="followers-container">
       <div className="follower-banner youtube">
-        <FaIcons.FaYoutube className="icon" />
-        <span className="platform">YouTube</span>
-        <span className="count">1.3M+</span>
+        <img src={youtubeLogo} alt="YouTube" className="icon-image" />
+        <div className="text">
+          <span className="count">1.3M+</span>
+        </div>
       </div>
 
       <div className="follower-banner instagram">
-        <FaIcons.FaInstagram className="icon" />
-        <span className="platform">Instagram</span>
-        <span className="count">1M+</span>
+        <img src={instagramLogo} alt="Instagram" className="icon-image" />
+        <div className="text">
+          <span className="count">1M+</span>
+        </div>
       </div>
 
       <div className="follower-banner facebook">
-        <FaIcons.FaFacebook className="icon" />
-        <span className="platform">Facebook</span>
-        <span className="count">1M+</span>
+        <img src={facebookLogo} alt="Facebook" className="icon-image" />
+        <div className="text">
+          <span className="count">1M+</span>
+        </div>
       </div>
     </div>
   );
